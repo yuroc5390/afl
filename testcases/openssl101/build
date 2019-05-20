@@ -1,0 +1,1 @@
+AFL_DONT_OPTIMIZE=1 AFL_USE_ASAN=1 afl-clang-fast  -I/home/yuroc/workspace/protocol/benchmark/openssl101/include -fsanitize=address  -o openssl101 openssl.c libssl.a libcrypto.a -ldl 
